@@ -62,7 +62,7 @@ insert into film values('AnVr','Confusione',2022,'italiana','Myself','Documentar
 insert into film values('MaFr', 'Dogville', 2003, 'danese','Lars von Trier','drammatico' );
 insert into film values('GIBR', 'The Mitchell VS the Machines', 2021, 'Americana', 'Mike Rianda, Jeff Rowe', 'Animazione, commedia, fantascienza');
 insert into film values('DaZa', 'The Snatch', 2000, 'Inglese', 'Guy Ritchie', 'Noir' );
-insert into film values('LoSc', 'Schindler s list', 1994, 'americano', 'Steven Spielberg', 'Guerra, Storico');
+insert into film values('LoSc', 'Schindler''s list', 1994, 'americano', 'Steven Spielberg', 'Guerra, Storico');
 insert into film values('DaCa', 'The Northman', 2022, 'Islandese', 'Robert Eggers', 'Storico-Drammatico');
 insert into film values('AnPl', 'Your Name', 2016, 'Giapponese',  'Makoto Shinkai', 'Animazione');
 insert into film values('Cata', 'Kill Bill: volume 1',  2003, 'USA', 'Quentin Tarantino', 'drama-action');
