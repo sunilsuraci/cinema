@@ -74,7 +74,7 @@ where attori.nome = 'Guy Pierce' and attori.nome = 'Carrie-Anne Moss'
 
 SELECT attori.nazionalita
 FROM recita join attori on recita.codattore = attori.codattore
-    join 
+     join 
 WHERE
 
 
