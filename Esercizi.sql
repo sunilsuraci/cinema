@@ -55,9 +55,10 @@ WHERE sale.citta='Napoli' and proiezioni.dataproiezione='2004-12-25' and attori.
 
 --N9 il titolo del film in cui recita M. Mastroianni or S. Loren
 
-SELECT film.titolo
-FROM attori JOIN recita on 
-SELECT
+SELECT film.titolo, attori.nome
+FROM attori JOIN recita  r on attori.codattore = r.codattore
+    join film on r.codfilm = film.codfilm
+where attori.nome ='Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
 
 
 

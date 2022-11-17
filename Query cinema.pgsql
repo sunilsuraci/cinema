@@ -102,9 +102,11 @@ where (SELECT
 
 --N9 il titolo del fil in cui recita Guy Pierce or Carrie-Anne Moss
 
-SELECT film.titolo
-FROM attori JOIN recita on 
-SELECT
+SELECT film.titolo, attori.nome
+FROM attori JOIN recita  r on attori.codattore = r.codattore
+    join film on r.codfilm = film.codfilm
+where attori.nome ='Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
+
 
 SELECT *
 from sale
