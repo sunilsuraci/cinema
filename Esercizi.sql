@@ -46,10 +46,12 @@ where proiezioni.dataproiezione = '2004-12-25' and sale.citta = 'Napoli'
 
 --N8 I nomi delle sale di Napoli in cui il giorno di natale 2004 è stato proiettato un film con R.Williams
 
-select sale.nome, sale.citta
-from sale join proiezioni on sale.codsala = proiezioni.codsala,
-     film join proiezioni on film.codfilm = proiezioni.codfilm
-where 
+SELECT sale.nome 
+FROM attori join recita on attori.codattore = recita.codattore 
+        join film on film.codfilm = recita.codfilm 
+        join sale on proiezioni.codsala = sale.codsala
+        join proiezioni on film.codfilm = proiezioni.codfilm
+WHERE sale.citta='Napoli' and proiezioni.dataproiezione='2004-12-25' and attori.nome='S. Loren'
 
 --N9 il titolo del film in cui recita M. Mastroianni or S. Loren
 
@@ -57,3 +59,21 @@ select film.titolo, attori.nome
 from  film join recita on film.codfilm = recita.codfilm,
         attori join recita r on attori.codattore = r.codattore
 where  attori.nome = 'Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
+
+
+--N10 il titolo del film in cui recitano Guy Pierce e Carrie-Anne Moss
+
+
+
+
+--N11 per ogni film in cui recita un attore francese, il titolo del film e il nome dell'attore
+
+
+
+
+--N12 per oni film che è stato proiettato a pisa nel gennaio 2005, il titolo del film e il nome della sala.
+
+
+
+
+-- N13 il numero di sale di pisa con più di 60 Posti
