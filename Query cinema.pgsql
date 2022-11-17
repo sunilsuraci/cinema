@@ -96,10 +96,10 @@ where (SELECT
 
 --N9 il titolo del fil in cui recita M. Mastroianni or S. Loren
 
-select film.titolo
+select film.titolo, attori.nome
 from  film join recita on film.codfilm = recita.codfilm,
-        attori join recita on attori.codattore = recita.codattore
-where  a
+        attori join recita r on attori.codattore = r.codattore
+where  attori.nome = 'Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
 
 
 
