@@ -40,7 +40,7 @@ where proiezioni.dataproiezione = '2004-12-25'
 --N7 il titolo e il genere di film proiettati il giorno di natale  del 2004 a Napoli 
 
 select film.titolo, film.genere, proiezioni.dataproiezione
-from film join proiezioni on film.codfilm = proiezioni.codfilm
-    sale join proiezioni on 
-where proiezioni.dataproiezione = '2004-12-25' and 
+from film join proiezioni on film.codfilm = proiezioni.codfilm,
+     sale join proiezioni p on sale.codsala = p.codsala
+where proiezioni.dataproiezione = '2004-12-25' and sale.citta = 'Napoli'
 
