@@ -70,3 +70,16 @@ from film join proiezioni on film.codfilm = proiezioni.codfilm,
 where proiezioni.dataproiezione = '2004-12-25' and sale.citta = 'Napoli'
 
 
+--N8 I nomi delle sale di Napoli in cui il giorno di natale 2004 è stato proiettato un film con R.Williams
+--Query 8
+SELECT *
+from sale
+SELECT *
+from film
+SELECT *
+from proiezioni
+
+select sale.nome, sale.citta
+from sale join proiezioni on sale.codsala = proiezioni.codsala,
+     film join proiezioni on film.codfilm = proiezioni.codfilm
+where 
