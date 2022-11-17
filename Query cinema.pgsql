@@ -48,4 +48,12 @@ WHERE film.regista = (SELECT film.regista
     where film.titolo ='Tenet')
 
 
+--N6 il titolo e il genere di film proiettati il giorno di natale del 2004
+--Query 6 
 
+SELECT * 
+from proiezioni 
+
+select film.titolo, film.genere, proiezioni.dataproiezione
+from film join proiezioni on film.codfilm = proiezioni.codfilm
+where proiezioni.dataproiezione = '2004-12-25'
