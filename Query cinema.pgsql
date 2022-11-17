@@ -131,5 +131,6 @@ where  attori.nome = 'Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
 --N10 il titolo del film in cui recitano Guy Pierce e Carrie-Anne Moss
 
 select film.titolo 
-from recita join attori on 
+from recita join attori on recita.codattore = attori.codattore
+    join 
 where 

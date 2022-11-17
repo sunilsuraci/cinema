@@ -64,8 +64,10 @@ where attori.nome ='Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
 
 --N10 il titolo del film in cui recitano Guy Pierce e Carrie-Anne Moss
 
-
-
+select film.titolo 
+from recita join attori on recita.codattore = attori.codattore
+    join 
+where 
 
 --N11 per ogni film in cui recita un attore francese, il titolo del film e il nome dell'attore
 
