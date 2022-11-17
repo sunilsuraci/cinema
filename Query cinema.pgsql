@@ -38,14 +38,14 @@ SELECT film.titolo
 FROM film
 WHERE film.regista = (SELECT regista
     from film
-    where film.regista = 'tenet')
+    where film.regista = 'Tenet')
 
 
 select film.titolo
 FROM film
 WHERE film.regista = (SELECT film.regista
     from film
-    where film.regista ='Tenet')
+    where film.titolo ='Tenet')
 
 
 

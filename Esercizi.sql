@@ -28,5 +28,5 @@ select film.titolo
 FROM film
 WHERE film.regista = (SELECT film.regista
     from film
-    where film.regista ='Tenet')
+    where film.titolo ='Tenet')
 
