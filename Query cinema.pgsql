@@ -134,3 +134,25 @@ select film.titolo
 from recita join attori on recita.codattore = attori.codattore
     join film on recita.codfilm = film.codfilm
 where attori.nome = 'Guy Pierce' and attori.nome = 'Carrie-Anne Moss'
+
+
+--N11 per ogni film in cui recita un attore francese, il titolo del film e il nome dell'attore
+
+SELECT *
+from sale
+SELECT *
+from film
+SELECT *
+from proiezioni
+
+SELECT *
+from attori
+SELECT *
+from recita
+
+
+
+SELECT attori.nazionalita
+FROM recita join attori on recita.codattore = attori.codattore
+    join 
+WHERE
