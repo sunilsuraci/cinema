@@ -138,6 +138,8 @@ create table recita(
     foreign key (codFilm)
         references film(codFilm)
 );
+insert into film values ('TTm', 'The Time Machine', 2002, 'Americana', 'Simon Wells', 'fantastico, avventura');
+insert into recita values (33, 'TTm');
 
 insert into recita values(15,'AnPl');
 insert into recita values(80,'AnPl');

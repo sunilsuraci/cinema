@@ -79,7 +79,27 @@ from film
 SELECT *
 from proiezioni
 
-select sale.nome, sale.citta
-from sale join proiezioni on sale.codsala = proiezioni.codsala,
-     film join proiezioni on film.codfilm = proiezioni.codfilm
-where 
+SELECT *
+from attori
+SELECT *
+from recita
+
+
+
+select sale.nome, attori.nome
+from 
+where (SELECT 
+        FROM
+        WHERE)
+
+
+
+--N9 il titolo del fil in cui recita M. Mastroianni or S. Loren
+
+select film.titolo
+from  film join recita on film.codfilm = recita.codfilm,
+        attori join recita on attori.codattore = recita.codattore
+where  a
+
+
+

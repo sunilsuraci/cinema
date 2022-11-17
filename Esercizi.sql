@@ -44,10 +44,16 @@ from film join proiezioni on film.codfilm = proiezioni.codfilm,
      sale join proiezioni p on sale.codsala = p.codsala
 where proiezioni.dataproiezione = '2004-12-25' and sale.citta = 'Napoli'
 
-
 --N8 I nomi delle sale di Napoli in cui il giorno di natale 2004 è stato proiettato un film con R.Williams
 
 select sale.nome, sale.citta
 from sale join proiezioni on sale.codsala = proiezioni.codsala,
      film join proiezioni on film.codfilm = proiezioni.codfilm
 where 
+
+--N9 il titolo del film in cui recita M. Mastroianni or S. Loren
+
+select film.titolo
+from  film join recita on film.codfilm = recita.codfilm,
+        attori join recita on attori.codattore = recita.codattore
+where  a
