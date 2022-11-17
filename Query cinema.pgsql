@@ -41,4 +41,11 @@ WHERE film.regista = (SELECT regista
     where film.regista = 'tenet')
 
 
+select film.titolo
+FROM film
+WHERE film.regista = (SELECT film.regista
+    from film
+    where film.regista ='Tenet')
+
+
 
