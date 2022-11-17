@@ -85,11 +85,11 @@ SELECT *
 from recita
 
 SELECT sale.nome 
-FROM attori join recita on attori.codattore = recita.codattore 
-        join film on film.codfilm = recita.codfilm 
-        join sale on proiezioni.codsala = sale.codsala
-        join proiezioni on film.codfilm = proiezioni.codfilm
-WHERE sale.citta='Napoli' and proiezioni.dataproiezione='2004-12-25' and attori.nome='S. Loren'
+FROM attori join recita on attori.codattore=recita.codattore 
+    join film on film.codfilm=recita.codfilm 
+    join proiezioni on film.codfilm=proiezioni.codfilm 
+    join sale on proiezioni.codsala=sale.codsala
+WHERE sale.citta='Napoli' and proiezioni.dataproiezione='2004-12-25' and attori.nome='R.William'
 
 
 select sale.nome, attori.nome
@@ -102,10 +102,25 @@ where (SELECT
 
 --N9 il titolo del fil in cui recita Guy Pierce or Carrie-Anne Moss
 
-select film.titolo, attori.nome
-from  recita  join film on recita.codfilm = film.codfilm,
-        recita r1 join attori on r1.codattore = attori.codattore
-where  attori.nome = 'Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
+SELECT film.titolo
+FROM attori JOIN recita on 
+SELECT
+
+SELECT *
+from sale
+SELECT *
+from film
+SELECT *
+from proiezioni
+
+SELECT *
+from attori
+SELECT *
+from recita
+
+select film.titolo 
+from attori join recita
+WHERE
 
 select film.titolo, attori.nome
 from  recita left join  film
@@ -114,5 +129,5 @@ where  attori.nome = 'Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
 --N10 il titolo del film in cui recitano Guy Pierce e Carrie-Anne Moss
 
 select film.titolo 
-from recita join 
+from recita join attori on 
 where 

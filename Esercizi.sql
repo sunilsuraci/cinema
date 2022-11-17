@@ -47,18 +47,18 @@ where proiezioni.dataproiezione = '2004-12-25' and sale.citta = 'Napoli'
 --N8 I nomi delle sale di Napoli in cui il giorno di natale 2004 è stato proiettato un film con R.Williams
 
 SELECT sale.nome 
-FROM attori join recita on attori.codattore = recita.codattore 
-        join film on film.codfilm = recita.codfilm 
-        join sale on proiezioni.codsala = sale.codsala
-        join proiezioni on film.codfilm = proiezioni.codfilm
-WHERE sale.citta='Napoli' and proiezioni.dataproiezione='2004-12-25' and attori.nome='S. Loren'
+FROM attori join recita on attori.codattore=recita.codattore 
+    join film on film.codfilm=recita.codfilm 
+    join proiezioni on film.codfilm=proiezioni.codfilm 
+    join sale on proiezioni.codsala=sale.codsala
+WHERE sale.citta='Napoli' and proiezioni.dataproiezione='2004-12-25' and attori.nome='R.William'
 
 --N9 il titolo del film in cui recita M. Mastroianni or S. Loren
 
-select film.titolo, attori.nome
-from  film join recita on film.codfilm = recita.codfilm,
-        attori join recita r on attori.codattore = r.codattore
-where  attori.nome = 'Guy Pierce' or attori.nome = 'Carrie-Anne Moss'
+SELECT film.titolo
+FROM attori JOIN recita on 
+SELECT
+
 
 
 --N10 il titolo del film in cui recitano Guy Pierce e Carrie-Anne Moss
