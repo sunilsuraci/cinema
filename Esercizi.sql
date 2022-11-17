@@ -22,5 +22,11 @@ SELECT film.genere, film.nazionalita, film.titolo
 FROM film
 WHERE film.annoproduzione > 1990  and film.genere like 'drammatico' and (film.nazionalita like 'USA' or film.nazionalita like 'danese')
 
---N5 il titolo del film dello stesso regista 'casablanca'
+--N5 il titolo del film dello stesso regista 'Tenet'
+
+SELECT film.titolo
+FROM film
+WHERE film.regista = (SELECT regista
+    from film
+    where film.regista = 'tenet')
 

@@ -34,6 +34,11 @@ WHERE film.annoproduzione > 1990  and film.genere like 'drammatico' and (film.na
 
 
 --Query 5
-SELECT film.regista, film.titolo
-FROM
-WHERE
+SELECT film.titolo
+FROM film
+WHERE film.regista = (SELECT regista
+    from film
+    where film.regista = 'tenet')
+
+
+
